@@ -49,7 +49,7 @@ body {
 .hero-section {
   position: relative;
   min-height: 76.7rem;
-  background-image: url(./img/hero-img.png);
+  background-image: url(./img/H.png);
   background-repeat: none;
   background-position: center;
   background-size: cover;
@@ -385,7 +385,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #menu-icon {
     display: block;
   }
