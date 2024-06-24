@@ -1,0 +1,675 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  color: #181a18;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4%;
+}
+
+.navbar a {
+  color: #333;
+  font-size: 2rem;
+  margin-left: 3.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #064749;
+  color: #0b5053a2;
+}
+
+#menu-icon {
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* hero-section design */
+.hero-section {
+  position: relative;
+  min-height: 76.7rem;
+  background-image: url(./img/hero-img.png);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+
+  margin-bottom: 15rem;
+}
+
+.hero-section .title-box {
+  position: absolute;
+
+  padding: 4rem 6rem;
+  top: 12.3rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #fff;
+}
+
+.hero-section .title-box h1 {
+  font-size: 5.4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero-section .title-box p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+/* future section design */
+.future-section {
+  padding: 0 9%;
+  margin-bottom: 15rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.future-box {
+  background-color: #f2f0f2;
+  border-radius: 50px;
+  display: flex;
+  overflow: hidden;
+}
+
+.gallery-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: end;
+}
+
+.gallery-side img {
+  width: 300px;
+}
+
+.gallery-side img .img-cor {
+  width: 600px;
+}
+
+.right-side {
+  padding: 8rem 4rem;
+  justify-content: center;
+  align-content: center;
+  margin-left: 2rem;
+}
+
+.right-side h2 {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.right-side p {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* features section design */
+
+.features-section {
+  padding: 0 6%;
+  margin-bottom: 15rem;
+}
+
+.features-section .head-title {
+  text-align: center;
+}
+
+.head-title h2 {
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+.head-title p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.features-list {
+  background-color: #e2f1e8;
+  padding: 3rem;
+  border-radius: 30px;
+  width: 290px;
+  height: 195px;
+}
+
+.features-list .icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.features-list h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.features-list p {
+  font-size: 1.6rem;
+}
+
+/* location section design */
+.location-section {
+  padding: 0 6%;
+  margin-bottom: 15rem;
+}
+
+.location-section .head-title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.location-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-box h4 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.location-box img {
+  width: 196px;
+  height: 196px;
+  border-radius: 50px;
+}
+
+/* BREAK POINTS */
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 4%;
+  }
+
+  .navbar a {
+    color: #333;
+    font-size: 2rem;
+    margin-left: 3.5rem;
+  }
+
+  .navbar a:hover {
+    border-bottom: 2px solid #064749;
+    color: #0b5053a2;
+  }
+
+  #menu-icon {
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hero-section {
+    margin-bottom: 15rem;
+  }
+
+  .hero-section .title-box {
+    padding: 4rem 6rem;
+    top: 12.3rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #fff;
+  }
+
+  .hero-section .title-box h1 {
+    font-size: 5.4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section .title-box p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .future-section {
+    padding: 0 4%;
+    margin-bottom: 10rem;
+  }
+
+  .future-box {
+    background-color: #f2f0f2;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .gallery-side img {
+    width: 200px;
+  }
+
+  .gallery-side img .img-cor {
+    width: 100px;
+  }
+
+  .right-side {
+    padding: 8rem 4rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .right-side h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    margin-right: 2rem;
+  }
+
+  .right-side p br {
+    display: none;
+  }
+
+  .right-side p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-right: 2rem;
+  }
+
+  .features-section {
+    padding: 0 4%;
+    margin-bottom: 10rem;
+  }
+
+  .features-section .head-title {
+    text-align: center;
+  }
+
+  .head-title h2 {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .head-title p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  .features-container {
+    gap: 20px;
+    text-align: center;
+  }
+
+  .features-list {
+    background-color: #e2f1e8;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 340px;
+    height: 195px;
+  }
+
+  .features-list .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  .features-list h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .features-list p br {
+    display: none;
+  }
+
+  .features-list p {
+    font-size: 1.4rem;
+  }
+
+  .location-section {
+    margin-bottom: 10rem;
+  }
+
+  .location-section .head-title {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .location-container {
+    gap: 10px;
+  }
+
+  .location-box h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .location-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+  }
+
+  .hero-section .title-box {
+    padding: 3rem 4rem;
+  }
+
+  .hero-section .title-box h1 {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section .title-box p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    justify-content: flex-start;
+  }
+
+  .hero-section,
+  .future-section,
+  .features-section {
+    margin-bottom: 10rem;
+  }
+
+  .future-box {
+    flex-direction: column;
+  }
+
+  .gallery-side img {
+    width: 100%;
+  }
+
+  .right-side {
+    padding: 2rem 2rem;
+  }
+
+  .right-side h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    margin-left: 0;
+    font-weight: 800;
+  }
+
+  .right-side p {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .right-side p br {
+    display: none;
+  }
+
+  .features-section .head-title h2 {
+    font-size: 4rem;
+  }
+
+  .features-section .head-title h2 br {
+    display: none;
+  }
+
+  .features-section .head-title p {
+    font-size: 1.8rem;
+  }
+
+  .features-section .head-title p br {
+    display: none;
+  }
+
+  .location-container {
+    flex-direction: column;
+  }
+
+  .features-container {
+    flex-direction: column;
+  }
+
+  .features-list {
+    width: 600px;
+    align-items: center;
+  }
+
+  .features-list .icon,
+  h4,
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-list h4 {
+    font-size: 2.4rem;
+  }
+
+  .features-list p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .features-container br {
+    display: none;
+  }
+
+  .location-box img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 1rem 4%;
+  }
+
+  .header .logo {
+    width: 20%;
+  }
+
+  .hero-section {
+    min-height: 425px;
+  }
+
+  .right-side h2 {
+    font-size: 2.4rem;
+    margin-right: 2rem;
+  }
+
+  .right-side p {
+    font-size: 1.4rem;
+  }
+
+  .right-side p br {
+    display: none;
+  }
+
+  .hero-section .title-box {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .hero-section .title-box h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section .title-box p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-section .title-box {
+    padding: 1.4rem 2rem;
+    top: 3rem;
+  }
+
+  .features-section .head-title h2 {
+    font-size: 2.4rem;
+  }
+
+  .features-section .head-title p {
+    font-size: 1.4rem;
+  }
+
+  .head-title br {
+    display: none;
+  }
+
+  .features-list {
+    width: 290px;
+    height: 230px;
+
+    align-items: center;
+  }
+
+  .location-container {
+    gap: 4rem;
+  }
+
+  .location-box h4 {
+    font-size: 2rem;
+  }
+
+  .location-box img {
+    width: 290px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 1rem 4%;
+  }
+
+  .header .logo {
+    width: 20%;
+  }
+
+  .hero-section {
+    min-height: 425px;
+  }
+
+  .future-section .future-box {
+    flex-direction: column;
+  }
+
+  .gallery-side img {
+    width: 100%;
+  }
+
+  .right-side h2 {
+    font-size: 2.4rem;
+    margin-right: 2rem;
+  }
+
+  .right-side p {
+    font-size: 1.4rem;
+  }
+
+  .right-side p br {
+    display: none;
+  }
+
+  .hero-section .title-box {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .hero-section .title-box h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section .title-box p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-section .title-box {
+    padding: 1.4rem 1.4rem;
+    top: 3rem;
+  }
+
+  .features-section .head-title h2 {
+    font-size: 2.4rem;
+  }
+
+  .features-section .head-title p {
+    font-size: 1.4rem;
+  }
+
+  .head-title br {
+    display: none;
+  }
+
+  .features-section .features-container .features-list {
+    width: 290px;
+    height: 230px;
+
+    align-items: center;
+  }
+
+  .location-section .head-title h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .location-container {
+    gap: 4rem;
+  }
+
+  .location-box h4 {
+    font-size: 2rem;
+  }
+
+  .location-box img {
+    width: 290px;
+    height: 230px;
+  }
+}
